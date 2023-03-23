@@ -1,0 +1,1 @@
+export const calcValue = (min: number, max: number) => ~~(min + Math.random() * (max - min + 1));

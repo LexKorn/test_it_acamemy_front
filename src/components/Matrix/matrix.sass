@@ -1,0 +1,33 @@
+.matrix
+    margin: 100px auto 30px
+    padding: 10px
+    width: 730px
+    justify-content: center
+    display: grid
+    grid-template-columns: repeat(13, 50px)
+    grid-template-rows: repeat(13, 20px)
+    gap: 5px
+    background-color: #222222
+    border-radius: 7px
+    &__elem
+        color: white
+        text-align: center
+        border-radius: 7px
+
+@media (max-width: 768px)
+    .matrix
+        margin: 60px auto 20px
+        width: 95%
+        grid-template-columns: repeat(13, 1fr)
+
+@media (max-width: 575px)
+    .matrix
+        font-size: 14px
+        line-height: 20px
+        grid-template-rows: repeat(13, 18px)
+
+@media (max-width: 425px)
+    .matrix
+        font-size: 12px
+        line-height: 16px
+        grid-template-rows: repeat(13, 16px)
